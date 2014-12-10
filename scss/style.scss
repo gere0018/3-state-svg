@@ -1,0 +1,50 @@
+
+#headphones{
+    outline:3px solid orange;
+    width:400px;
+    height:400px;
+  #headphones-not-connected{
+    opacity: 1;
+  }
+  #headphones-on{
+   opacity: 0;
+  }
+
+  #headphones-off{
+    opacity:0;
+  }
+
+
+}
+#headphones:hover{
+  #headphones-off{
+       opacity: 1;
+  }
+  #headphones-not-connected{
+    opacity:0;
+  }
+
+  #headphones-on{
+   opacity: 0;
+  }
+
+}
+
+#headphones.active{
+  #headphones-on{
+       opacity: 1;
+   }
+  #headphones-not-connected{
+    opacity:0;
+  }
+
+  #headphones-off{
+   opacity: 0;
+  }
+
+}
+
+
+
+
+
