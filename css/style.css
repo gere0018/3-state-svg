@@ -1,7 +1,13 @@
+#container {
+  width: 950px;
+  margin: 0 auto; }
+
 #headphones {
+  float: left;
   outline: 3px solid orange;
   width: 400px;
-  height: 400px; }
+  height: 400px;
+  margin: 20px; }
   #headphones #headphones-not-connected {
     opacity: 1; }
   #headphones #headphones-on {
@@ -22,5 +28,52 @@
   opacity: 0; }
 #headphones.active #headphones-off {
   opacity: 0; }
+
+#mic {
+  float: left;
+  outline: 3px solid orange;
+  width: 400px;
+  height: 400px;
+  margin: 20px; }
+  #mic #microphone-not-connected {
+    opacity: 1; }
+  #mic #microphone-off {
+    opacity: 0; }
+
+#mic:hover #microphone-not-connected {
+  opacity: 0; }
+#mic:hover #microphone-off {
+  opacity: 1;
+  -webkit-transform: rotate3d(0, 0, 1, -5deg);
+  transform: rotate3d(0, 0, 1, -5deg); }
+#mic:hover #linga {
+  -webkit-transform: rotate3d(0, 0, 1, 15deg);
+  transform: rotate3d(0, 0, 1, 15deg); }
+
+#mic.mic-active #microphone-not-connected {
+  opacity: 0; }
+#mic.mic-active #microphone-off {
+  opacity: 1;
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg); }
+#mic.mic-active #linga {
+  fill: #6db3f2;
+  /* Old browsers */
+  fill: -moz-linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #1e69de 100%);
+  /* FF3.6+ */
+  fill: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6db3f2), color-stop(50%, #54a3ee), color-stop(100%, #1e69de));
+  /* Chrome,Safari4+ */
+  fill: -webkit-linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #1e69de 100%);
+  /* Chrome10+,Safari5.1+ */
+  fill: -o-linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #1e69de 100%);
+  /* Opera 11.10+ */
+  fill: -ms-linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #1e69de 100%);
+  /* IE10+ */
+  fill: linear-gradient(to bottom, #6db3f2 0%, #54a3ee 50%, #1e69de 100%);
+  /* W3C */
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg); }
+#mic.mic-active #cup {
+  fill: #0066cc; }
 
 /*# sourceMappingURL=style.css.map */
